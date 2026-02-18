@@ -52,7 +52,7 @@ const MovieList = ({ movies, filters, setFilters, sortBy, setSortBy, onDetail, o
                 onChange={(e) => setFilters({...filters, maxPrice: parseFloat(e.target.value)})}
                 style={{width: '100px'}}
               />
-              <span className="badge bg-secondary">{filters.maxPrice}$ CAD</span>
+              <span className="badge bg-secondary">{filters.maxPrice}$</span>
             </div>
           </div>
           <div className="col-md-4">
@@ -97,7 +97,7 @@ const MovieList = ({ movies, filters, setFilters, sortBy, setSortBy, onDetail, o
                   <p className="text-secondary small mb-3">{movie.genre}</p>
                   <div className="mt-auto">
                     <div className="d-flex justify-content-between align-items-center mb-3">
-                      <span className="fw-bold text-warning fs-5">{movie.pricePerDay.toFixed(2)}$ CAD<small className="text-secondary fw-normal ms-1" style={{fontSize: '0.6em'}}>/jour</small></span>
+                      <span className="fw-bold text-warning fs-5">{movie.pricePerDay.toFixed(2)}$<small className="text-secondary fw-normal ms-1" style={{fontSize: '0.6em'}}>/jour</small></span>
                     </div>
                     <div className="d-grid gap-2">
                       <button className="btn btn-outline-light btn-sm" style={{ color: 'white' }} onClick={() => onDetail(movie)}>Détails</button>
