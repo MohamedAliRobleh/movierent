@@ -1,0 +1,222 @@
+export const movies = [
+  {
+    id: 1,
+    title: "Inception",
+    genre: "Sci-Fi",
+    pricePerDay: 3.99,
+    rating: 5,
+    inStock: true,
+    isNewRelease: false,
+    description: "Dom Cobb est un voleur expérimenté, le meilleur dans l'art dangereux de l'extraction...",
+    poster: "https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?q=80&w=400"
+  },
+  {
+    id: 2,
+    title: "Interstellar",
+    genre: "Sci-Fi",
+    pricePerDay: 4.50,
+    rating: 5,
+    inStock: true,
+    isNewRelease: false,
+    description: "Alors que la Terre se meurt, une équipe d'explorateurs voyage à travers un trou de ver...",
+    poster: "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=400"
+  },
+  {
+    id: 3,
+    title: "The Dark Knight",
+    genre: "Action",
+    pricePerDay: 3.99,
+    rating: 5,
+    inStock: true,
+    isNewRelease: false,
+    description: "Batman entreprend de démanteler les dernières organisations criminelles...",
+    poster: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?q=80&w=400"
+  },
+  {
+    id: 4,
+    title: "Dune: Part Two",
+    genre: "Sci-Fi",
+    pricePerDay: 5.99,
+    rating: 5,
+    inStock: true,
+    isNewRelease: true,
+    description: "Paul Atreides s'unit à Chani et aux Fremen...",
+    poster: "https://images.unsplash.com/photo-1509023464722-18d996393ca8?q=80&w=400"
+  },
+  {
+    id: 5,
+    title: "Pulp Fiction",
+    genre: "Crime",
+    pricePerDay: 2.99,
+    rating: 5,
+    inStock: true,
+    isNewRelease: false,
+    description: "L'odyssée sanglante et mouvementée de petits malfrats à Los Angeles.",
+    poster: "https://images.unsplash.com/photo-1594908900066-3f47337549d8?q=80&w=400"
+  },
+  {
+    id: 6,
+    title: "The Batman",
+    genre: "Action",
+    pricePerDay: 3.99,
+    rating: 4,
+    inStock: true,
+    isNewRelease: false,
+    description: "Un tueur s'en prend à l'élite de Gotham...",
+    poster: "https://images.unsplash.com/photo-1531259683007-016a7b628fc3?q=80&w=400"
+  },
+  {
+    id: 7,
+    title: "Spider-Man: Across the Spider-Verse",
+    genre: "Animation",
+    pricePerDay: 4.99,
+    rating: 5,
+    inStock: true,
+    isNewRelease: true,
+    description: "Miles Morales est catapulté à travers le Multivers...",
+    poster: "https://images.unsplash.com/photo-1635805737707-575885ab0820?q=80&w=400"
+  },
+  {
+    id: 8,
+    title: "Joker",
+    genre: "Drama",
+    pricePerDay: 3.50,
+    rating: 5,
+    inStock: true,
+    isNewRelease: false,
+    description: "L'histoire de l'origine d'Arthur Fleck...",
+    poster: "https://images.unsplash.com/photo-1559583109-3e7968136c99?q=80&w=400"
+  },
+  {
+    id: 9,
+    title: "The Matrix",
+    genre: "Sci-Fi",
+    pricePerDay: 2.50,
+    rating: 5,
+    inStock: false,
+    isNewRelease: false,
+    description: "Un programmeur découvre que la réalité est une simulation.",
+    poster: "https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?q=80&w=400"
+  },
+  {
+    id: 10,
+    title: "Parasite",
+    genre: "Thriller",
+    pricePerDay: 3.99,
+    rating: 4,
+    inStock: true,
+    isNewRelease: false,
+    description: "Toute la famille de Ki-taek s'intéresse à la famille Park.",
+    poster: "https://images.unsplash.com/photo-1585951237318-9ea5e175b891?q=80&w=400"
+  },
+  {
+    id: 11,
+    title: "Everything Everywhere All at Once",
+    genre: "Sci-Fi",
+    pricePerDay: 4.50,
+    rating: 4,
+    inStock: true,
+    isNewRelease: false,
+    description: "Une immigrée est entraînée dans une aventure multiverselle.",
+    poster: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=400"
+  },
+  {
+    id: 12,
+    title: "The Whale",
+    genre: "Drama",
+    pricePerDay: 4.50,
+    rating: 4,
+    inStock: true,
+    isNewRelease: false,
+    description: "Un professeur tente de renouer avec sa fille.",
+    poster: "https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=400"
+  },
+  {
+    id: 13,
+    title: "Top Gun: Maverick",
+    genre: "Action",
+    pricePerDay: 4.99,
+    rating: 5,
+    inStock: true,
+    isNewRelease: false,
+    description: "Pete Maverick Mitchell continue de repousser ses limites.",
+    poster: "https://images.unsplash.com/photo-1504196606672-aef5c9cefc92?q=80&w=400"
+  },
+  {
+    id: 14,
+    title: "Blade Runner 2049",
+    genre: "Sci-Fi",
+    pricePerDay: 3.50,
+    rating: 4,
+    inStock: true,
+    isNewRelease: false,
+    description: "Un officier découvre un secret enfoui.",
+    poster: "https://images.unsplash.com/photo-1533928298208-27ff66555d8d?q=80&w=400"
+  },
+  {
+    id: 15,
+    title: "Get Out",
+    genre: "Horror",
+    pricePerDay: 2.99,
+    rating: 4,
+    inStock: true,
+    isNewRelease: false,
+    description: "Un photographe découvre un secret dérangeant.",
+    poster: "https://images.unsplash.com/photo-1509248961158-e54f6934749c?q=80&w=400"
+  },
+  {
+    id: 16,
+    title: "The Grand Budapest Hotel",
+    genre: "Comedy",
+    pricePerDay: 2.50,
+    rating: 4,
+    inStock: true,
+    isNewRelease: false,
+    description: "Les aventures de Gustave H dans un célèbre hôtel européen.",
+    poster: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=400"
+  },
+  {
+    id: 17,
+    title: "Whiplash",
+    genre: "Drama",
+    pricePerDay: 2.99,
+    rating: 5,
+    inStock: true,
+    isNewRelease: false,
+    description: "Un jeune batteur fait face à un professeur impitoyable.",
+    poster: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=400"
+  },
+  {
+    id: 18,
+    title: "Logan",
+    genre: "Action",
+    pricePerDay: 3.50,
+    rating: 4,
+    inStock: true,
+    isNewRelease: false,
+    description: "Un Logan fatigué protège une jeune mutante.",
+    poster: "https://images.unsplash.com/photo-1534809027769-b00d750a6bac?q=80&w=400"
+  },
+  {
+    id: 19,
+    title: "Arrival",
+    genre: "Sci-Fi",
+    pricePerDay: 3.50,
+    rating: 4,
+    inStock: true,
+    isNewRelease: false,
+    description: "Des vaisseaux spatiaux mystérieux atterrissent sur Terre.",
+    poster: "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=400"
+  },
+  {
+    id: 20,
+    title: "Coco",
+    genre: "Animation",
+    pricePerDay: 3.99,
+    rating: 5,
+    inStock: true,
+    isNewRelease: false,
+    description: "Miguel rêve de devenir un musicien accompli.",
+    poster: "https://images.unsplash.com/photo-1514533212735-5df27d970db0?q=80&w=400"
+  }
+];
