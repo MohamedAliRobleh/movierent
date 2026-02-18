@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { movies as initialMovies } from './data/movies';
+import './App.css';
+
 
 // Import de vos composants
 import Navbar from './components/Navbar.jsx';

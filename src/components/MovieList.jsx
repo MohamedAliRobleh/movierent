@@ -13,8 +13,9 @@ const MovieList = ({ movies, filters, setFilters, sortBy, setSortBy, onDetail, o
             {genres.map(g => (
               <button 
                 key={g} 
-                className={`btn btn-sm $ {filters.genre === g ? 'btn-warning' : 'btn-outline-light'}`}
+                className={`btn btn-sm ${filters.genre === g ? 'btn-warning' : 'btn-outline-light'}`}
                 onClick={() => setFilters({...filters, genre: g})}
+                style={{ color: 'white', borderColor: 'rgba(255,255,255,0.3)' }}
               >
                 {g}
               </button>
@@ -29,7 +30,7 @@ const MovieList = ({ movies, filters, setFilters, sortBy, setSortBy, onDetail, o
                 checked={filters.onlyAvailable}
                 onChange={(e) => setFilters({...filters, onlyAvailable: e.target.checked})}
               />
-              <label className="form-check-label small" htmlFor="stockSwitch">Disponibles</label>
+              <label className="form-check-label small text-white" htmlFor="stockSwitch">Disponibles</label>
             </div>
             <div className="form-check form-switch">
               <input 
@@ -39,7 +40,7 @@ const MovieList = ({ movies, filters, setFilters, sortBy, setSortBy, onDetail, o
                 checked={filters.onlyNew}
                 onChange={(e) => setFilters({...filters, onlyNew: e.target.checked})}
               />
-              <label className="form-check-label small" htmlFor="newSwitch">Nouveautés</label>
+              <label className="form-check-label small text-white" htmlFor="newSwitch">Nouveautés</label>
             </div>
             <div className="d-flex align-items-center gap-2">
               <span className="small text-secondary">Prix Max:</span>
@@ -51,7 +52,7 @@ const MovieList = ({ movies, filters, setFilters, sortBy, setSortBy, onDetail, o
                 onChange={(e) => setFilters({...filters, maxPrice: parseFloat(e.target.value)})}
                 style={{width: '100px'}}
               />
-              <span className="badge bg-secondary">{filters.maxPrice}$</span>
+              <span className="badge bg-secondary">{filters.maxPrice}$ CAD</span>
             </div>
           </div>
           <div className="col-md-4">
@@ -81,20 +82,25 @@ const MovieList = ({ movies, filters, setFilters, sortBy, setSortBy, onDetail, o
             <div key={movie.id} className="col">
               <div className="card h-100 movie-card shadow">
                 <div className="position-relative">
-                  <img src={movie.poster} className={`card-img-top $ {!movie.inStock ? 'grayscale' : ''}`} alt={movie.title} style={{height: '350px', objectFit: 'cover'}} />
+                  <img 
+                    src={movie.poster} 
+                    className={`card-img-top ${!movie.inStock ? 'grayscale' : ''}`} 
+                    alt={movie.title} 
+                    style={{height: '350px', objectFit: 'cover'}} 
+                  />
                   {movie.isNewRelease && <span className="position-absolute top-0 start-0 m-2 badge bg-warning">NOUVEAU</span>}
                   <div className="position-absolute top-0 end-0 m-2 badge bg-dark bg-opacity-75">⭐ {movie.rating}/5</div>
                   {!movie.inStock && <div className="position-absolute top-50 start-50 translate-middle bg-danger bg-opacity-75 w-100 text-center py-1 fw-bold">ÉPUISÉ</div>}
                 </div>
                 <div className="card-body d-flex flex-column">
-                  <h5 className="card-title text-truncate">{movie.title}</h5>
+                  <h5 className="card-title text-truncate text-white" style={{ color: 'white' }}>{movie.title}</h5>
                   <p className="text-secondary small mb-3">{movie.genre}</p>
                   <div className="mt-auto">
                     <div className="d-flex justify-content-between align-items-center mb-3">
-                      <span className="fw-bold text-warning fs-5">{movie.pricePerDay.toFixed(2)}$<small className="text-secondary fw-normal ms-1" style={{fontSize: '0.6em'}}>/jour</small></span>
+                      <span className="fw-bold text-warning fs-5">{movie.pricePerDay.toFixed(2)}$ CAD<small className="text-secondary fw-normal ms-1" style={{fontSize: '0.6em'}}>/jour</small></span>
                     </div>
                     <div className="d-grid gap-2">
-                      <button className="btn btn-outline-light btn-sm" onClick={() => onDetail(movie)}>Détails</button>
+                      <button className="btn btn-outline-light btn-sm" style={{ color: 'white' }} onClick={() => onDetail(movie)}>Détails</button>
                       <button className="btn btn-warning btn-sm fw-bold" onClick={() => onAdd(movie)} disabled={!movie.inStock}>
                         {movie.inStock ? 'AJOUTER' : 'INDISPONIBLE'}
                       </button>
